@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -56,6 +57,12 @@ public class FavoritosAdapter extends RecyclerView.Adapter<FavoritosAdapter.View
                 listener.onButtonClicked(v,receta);
             }
         });
+        holder.contenedor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.onItemClicked(v,receta);
+            }
+        });
     }
 
 
@@ -65,6 +72,7 @@ public class FavoritosAdapter extends RecyclerView.Adapter<FavoritosAdapter.View
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
+        LinearLayout contenedor;
         ImageView imagenRecetas,borrarFav;
         TextView nombreReceta,rendimientoReceta,tiempototalReceta;
 
@@ -75,11 +83,13 @@ public class FavoritosAdapter extends RecyclerView.Adapter<FavoritosAdapter.View
             rendimientoReceta=itemView.findViewById(R.id.rendimiento);
             tiempototalReceta=itemView.findViewById(R.id.tiempo_total);
             borrarFav=itemView.findViewById(R.id.ic_delete);
+            contenedor=itemView.findViewById(R.id.datosRecetas);
         }
     }
 
     public interface OnButtonClickedListener{
         void onButtonClicked(View view,Receta receta);
+        void onItemClicked(View view,Receta receta);
     }
 
 }

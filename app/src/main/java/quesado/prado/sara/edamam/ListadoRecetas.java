@@ -13,6 +13,7 @@ import android.net.ConnectivityManager;
 import android.net.Network;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
@@ -52,7 +53,7 @@ public class ListadoRecetas extends AppCompatActivity {
         String health=getIntent().getExtras().getString("health");
         String mealtype=getIntent().getExtras().getString("mealtype");
         String busqueda=getIntent().getExtras().getString("busqueda");
-
+        String noencontradas=getResources().getString(R.string.noEncontradas);
         updateUI();
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -68,7 +69,7 @@ public class ListadoRecetas extends AppCompatActivity {
             viewModel.obtenerRecetas(diet,health,mealtype,busqueda).observe(this, new Observer<List<Receta>>() {
                 @Override
                 public void onChanged(List<Receta> recetasList) {
-
+                    Log.e("PRUEBA",recetasList.size()+"");
                     adapter.clear();
                     if (recetasList!=null){
                         adapter.addAll(recetasList);
@@ -77,8 +78,7 @@ public class ListadoRecetas extends AppCompatActivity {
                 }
             });
         }else {
-            empty.setText("No se han encontrado recetas");
-
+            empty.setText(noencontradas);
         }
     }
 

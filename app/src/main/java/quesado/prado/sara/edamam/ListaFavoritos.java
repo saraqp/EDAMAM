@@ -5,6 +5,7 @@ import androidx.lifecycle.Observer;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -62,6 +63,13 @@ public class ListaFavoritos extends AppCompatActivity implements FavoritosAdapte
         if (view.getId()==R.id.ic_delete){
             delReceta(receta);
         }
+    }
+
+    @Override
+    public void onItemClicked(View view, Receta receta) {
+        Intent intent=new Intent(getApplicationContext(),DescripcionReceta.class);
+        intent.putExtra("receta",receta);
+        startActivity(intent);
     }
 
     @Override

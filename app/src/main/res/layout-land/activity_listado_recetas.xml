@@ -18,7 +18,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layoutEmpty"
-        android:layout_width="435dp"
+        android:layout_width="442dp"
         android:layout_height="match_parent">
 
         <TextView
@@ -37,6 +37,6 @@
         android:name="quesado.prado.sara.edamam.fragments.FragmentIngredientes"
         android:layout_width="291dp"
         android:layout_height="match_parent"
-        android:layout_marginLeft="4dp"
+        android:layout_alignParentEnd="true"
         android:layout_toRightOf="@id/listviewListaRecetas" />
 </RelativeLayout>

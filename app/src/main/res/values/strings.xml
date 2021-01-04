@@ -22,4 +22,5 @@
     <string name="correctaInsercion">Receta añadida a favoritos</string>
     <string name="errorBorrado">Error al borrar la receta</string>
     <string name="correctoBorrado">Receta eliminada correctamente</string>
+    <string name="noEncontradas">No se han encontrado recetas</string>
 </resources>

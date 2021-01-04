@@ -48,16 +48,6 @@ public class Receta implements Serializable {
     @NonNull
     private String proteinaUnidad;
 
-    public Receta(@NonNull String nombreReceta, @NonNull String urlImagenReceta, @NonNull String urlPaginaReceta,int tiempototal,String ingredientes) {
-        this.nombreReceta = nombreReceta;
-        this.urlImagenReceta = urlImagenReceta;
-        this.urlPaginaReceta = urlPaginaReceta;
-        this.tiempototal=tiempototal;
-        this.ingredientes=ingredientes;
-        this.rendimiento= 0;
-        this.tiempototal=20;
-    }
-    @Ignore
     public Receta(String nombreReceta, String urlImagenReceta, String urlPaginaReceta, int rendimiento, float caloriasReceta, int tiempototal, String ingredientes, float energia, String energiaUnidad, float grasa, String grasaUnidad, float grasasSaturadas, String grasasSaturadasUnidad, float azucar, String azucarUnidad, float proteina, String proteinaUnidad) {
         this.nombreReceta = nombreReceta;
         this.urlImagenReceta = urlImagenReceta;

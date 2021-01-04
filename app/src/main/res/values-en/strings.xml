@@ -22,4 +22,5 @@
     <string name="correctaInsercion">"Recipe added to favorites "</string>
     <string name="errorBorrado">" Error deleting the recipe"</string>
     <string name="correctoBorrado">" Recipe successfully removed"</string>
+    <string name="noEncontradas">No recipes found</string>
 </resources>
