@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FragmentIngredientes"
+    android:background="@color/beige_claro">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+        <TextView
+            android:id="@+id/cabeceraIngredientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cabeceraFragment"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/textviewFragmentIngredientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"/>
+        </LinearLayout>
+
+        </ScrollView>
+
+</FrameLayout>

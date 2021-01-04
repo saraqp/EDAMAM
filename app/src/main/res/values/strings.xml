@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">EDAMAM</string>
+
+    <string name="buscar_recetas">Buscar Recetas</string>
+    <string name="buscar">Buscar</string>
+    <string name="salud">Salud</string>
+    <string name="tipo">Tipo</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="rendimiento">Rendimiento:</string>
+    <string name="tiempototal">Tiempo Total:</string>
+    <string name="diet">Dieta</string>
+    <string name="cabeceraFragment">Ingredientes Necesarios</string>
+    <string name="verMas">Ver Más</string>
+    <string name="infoNutricional">Informacion Nutricional</string>
+    <string name="energia">Valor Energético:</string>
+    <string name="grasa">Grasas:</string>
+    <string name="saturadas">Grasas Saturadas:</string>
+    <string name="azucar">Azúcares:</string>
+    <string name="proteinas">Proteinas:</string>
+    <string name="verWeb">Ver Web</string>
+    <string name="errorInsercion">Error al añadir la receta a favoritos</string>
+    <string name="correctaInsercion">Receta añadida a favoritos</string>
+    <string name="errorBorrado">Error al borrar la receta</string>
+    <string name="correctoBorrado">Receta eliminada correctamente</string>
+</resources>

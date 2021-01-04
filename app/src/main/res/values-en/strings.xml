@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EDAMAM</string>
+    <string name="buscar_recetas">Search Recipes</string>
+    <string name="buscar">Search</string>
+    <string name="salud">Health</string>
+    <string name="tipo">Type</string>
+    <string name="favoritos">Favorites</string>
+    <string name="rendimiento">Yield:</string>
+    <string name="tiempototal">Total Time:</string>
+    <string name="diet">Diet</string>
+    <string name="cabeceraFragment">Ingredients needed</string>
+    <string name="verMas">See more</string>
+    <string name="infoNutricional">Nutritional information</string>
+    <string name="energia">Energetic value:</string>
+    <string name="grasa">Fats:</string>
+    <string name="saturadas">Saturated fats:</string>
+    <string name="azucar">Sugars:</string>
+    <string name="proteinas">Protein:</string>
+    <string name="verWeb">See Web</string>
+    <string name="errorInsercion">" Error adding recipe to favorites"</string>
+    <string name="correctaInsercion">"Recipe added to favorites "</string>
+    <string name="errorBorrado">" Error deleting the recipe"</string>
+    <string name="correctoBorrado">" Recipe successfully removed"</string>
+</resources>
